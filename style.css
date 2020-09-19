@@ -1,283 +1,313 @@
-body {
+@font-face{
+    font-family: "Mon";
+    src: url("./Fonts/Montserrat-Regular.ttf");
+}
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    max-width: 100%;
-}
-/* header section */
-
-.checkout {
-    display: flex;
-    flex-direction: column;
+    font-family: "Mon", sans-serif;
+    /* border: 1px solid gray ; */
 }
 
-.header {
-    display: block;
-    color: black;
+h1{
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2.5vh;
+    margin-bottom: 35px;
 }
-/* Main section */
 
-.main {
+h3{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 2vh;
+}
+
+section{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10px;
+    justify-content: space-around;
+    /* margin: 0 15vw 0 15vw ; */
+   
 }
 
-#form {
-    width: 32%;
-    padding-left: 3%;
+label{
+    color: #4f4f4f;
+    font-weight: 400;
+    font-size: 0.75rem;
+    /* margin: 5rem 0; */
 }
 
-input::placeholder {
-    font-size: 18px;
-}
-/* Form_1 section */
-
-#form1 {
-    width: 100%;
-}
-
-label {
-    font-size: 14px;
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem ;
+    font-weight: 400;
     color: #828282;
-    margin: 3%;
+    margin: 1vh 0;
+    width: 100%;
+    height: 35px;
+    padding-left: 35px  ;
+    border: 1px solid #828282 ;
+    border-radius: 5px;
 }
 
-#contact_info {
-    font-size: 22px;
-    color: #333;
+#post-code{
+    width: 255px;
+    height: 35px;
 }
 
-#mail_box {
+.icon{
     position: relative;
 }
 
-#email {
-    background-image: url(./IMG/email.png);
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 3% 4% 3% 10%;
+i{
+    opacity: 0.5;
+    position: absolute;
+    top: 2.5vh;
+    left: 1vw;
+}
+
+
+.form{
+    margin-top: 2.5vh;
+    position: relative;
+    /* margin-right: 25px; */
+}
+
+.contact{
+    margin-bottom:8vh;
+}
+
+select{
+    width: 120px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem ;
+    font-weight: 400;
+    color: #828282;
+    margin: 1vh 2vh 0 0;
+    padding-left: 35px  ;
+    border: 1px solid #828282 ;
     border-radius: 5px;
-    border: 1px solid #828282;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 100%;
-    width: 100%;
 }
-
-#phone {
-    background-image: url(./IMG/phone.png);
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 3% 4% 3% 10%;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #828282;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-/* Form_2 section */
-
-#shipping {
-    font-size: 22px;
-    margin-top: 50px;
-    color: #333;
-}
-
-#full_name {
-    background-image: url(./IMG/user.png);
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 3% 4% 3% 10%;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #828282;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#adress {
-    background-image: url(./IMG/home-run.png);
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 3% 4% 3% 10%;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #828282;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#city {
-    background-image: url(./IMG/town.png);
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 3% 4% 3% 10%;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #828282;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-/* Form_3 section */
-
-#form_3 {
+.country-post{
     display: flex;
-    margin-top: 10px;
+    margin-bottom: 2vh;
+    
 }
 
-#country {
-    background-image: url(./IMG/world.png);
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    border-radius: 5px;
-    border: 1px solid #828282;
-    margin-top: 10px;
-    margin-bottom: 10px;
+#check{
+    width: 15px;
+    height: auto;
+    font-size: 0.75rem;
+    margin-right: 15px;
+    color: #828282;
 }
 
-#post_code {
-    background-image: url(./IMG/mail.png);
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    border-radius: 5px;
-    border: 1px solid #828282;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5%;
-    width: 100%;
-}
-/* form_4 Section */
-
-#form_4 {
-    margin-top: 10px;
-}
-/* Payment Section */
-
-#payment {
-    background-color: #eeeeee;
-    width: 30%;
-    height: 500px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border-radius: 10px;
-    margin-top: 20px;
+.checkbox{
+    font-size: 0.75rem;
 }
 
-#vintage {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+form{
+    position: relative;
+    margin-left: 180px;
+    margin-right: 20px;
+    padding-bottom: 50px;
 }
 
-#levi {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
 
-#image_bag_1 {
-    width: 30%;
-    padding-left: 5%;
-    margin-top: 30px;
-}
-
-#image_bag_2 {
-    width: 30%;
-    padding-left: 5%;
-    margin-top: 30px;
-}
-
-#bag1 {
-    width: 100%;
-    border-radius: 5px;
-}
-
-#bag2 {
-    width: 100%;
-    border-radius: 5px;
-}
-
-#vintage_text {
-    display: flex;
-    padding-top: 10px;
-    margin-left: 6%;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-#levi_text {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 6%;
-    padding-top: 10px;
-    flex-direction: column;
-}
-
-.price {
-    color: #f2994f;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-#vintage_back {
-    font-size: 20px;
-    color: #4E5150;
-    font-weight: bold;
-}
-
-#levi_bag {
-    font-size: 20px;
-    color: #4E5150;
-    font-weight: bold;
-}
-
-.qty-box {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 125px;
+button{
+    /* width: 75px;
     height: 40px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: 1px solid #828282;
-    align-items: center;
-    justify-content: space-around;
-}
-/* total section */
-
-#total {
-    margin-top: 60px;
-    width: 80%;
-    padding-left: 5%;
-    font-size: 18px;
-}
-
-.last_price {
-    margin-left: 63%;
-}
-/* Continue Section */
-
-#continue {
-    background-color: #f2994a;
+     */
+    padding: 15px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
     color: white;
-    height: 50px;
-    align-items: center;
-    width: 100px;
-    text-align: center;
+    text-align:center;
+    background-color: #F2994A;
     border-radius: 10px;
-    margin-top: 25px;
-    margin-left: 45%;
-    font-weight: bold;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+} 
+
+.shopping{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    width: 360px;
+    height: auto;
+    border-radius: 10px;
+    background:#EEEEEE ;
+    margin-right: 285px;
 }
 
-#con_text {
-    padding-top: 15px;
+.content{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 20px 10px 20px;
+}
+
+
+img{
+    width: 98px;
+    height: 110px;
+    border-radius: 10px;
+}
+
+h4{
+    font-weight: 700;
+    color: #4e5150;
+    padding: 3px 20px;
+}
+
+#price{
+    padding: 5px 20px;
+}
+
+.amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(136, 136, 136); 
+    border-radius:5px;
+    width: 105px;
+    height: 35px;
+    margin: 20px 20px;
+    position: relative;
+    padding: 8px 2px;
+    font-size: 0.75rem;
+}
+
+.shipping, .total{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 40px;
+    border-top: 1px solid #d3d3d3;
+    padding-bottom: 10px;
+   
+}
+
+.fa-plus, .fa-minus{
+    opacity: 1;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background:  #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: none;
+} 
+
+.fa-plus{
+    position: absolute;
+    top: 5px;
+    left: 75px;
+}
+
+.fa-minus{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+
+ 
+
+@media only screen and (max-width:900px){
+    section{
+        align-self: flex-start;
+        display: grid;
+        /* row-gap: 5px; */
+        grid-template-rows: 1fr 1.5fr;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "shopping"
+        "form";   
+    }
+
+    .shopping{
+        order: 1;
+        grid-area: "shopping";
+        margin: 0;
+        width: 100%;
+        /* margin-bottom: 50px; */
+    }
+
+    form{
+        /* display: flex;
+        align-items: flex-start; */
+        order: 2;
+        grid-area: "form";
+        margin: 0;
+        align-self: flex-start;
+        padding-bottom: 15%;
+    }
+
+    select{
+        background-color: #e0e0e0;
+    }
+
+    button{
+        margin-left: 50%;
+        margin-right: 25%;
+        padding: 15px 25px;
+        width: 200px;
+        font-size: 1rem;
+        font-weight: 700;
+        outline: none;
+        border: none;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (max-width:480px){
+.shopping{
+    width: 75%;   
+}
+
+form, .shopping{
+    margin-left: 10vw;
+}
+
+input{
+    width: 300px;
+    padding-right: 5px;
+}
+
+.country-post{
+    display: flex;
+    flex-direction: column;
+}
+
+.country{
+    margin-bottom: 10px;
+}
+}
+
+@media (max-width: 360px){
+    input{
+        width: 275px;
+    }
+
+    .shopping{
+        width: 85%;
+    }
+    button{
+        margin-left: 25%;
+        margin-right: 37%;
+        padding: 15px 25px;
+        width: 100px;
+        font-size: 0.8rem;   
+    }
 }
