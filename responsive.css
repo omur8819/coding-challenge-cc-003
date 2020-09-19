@@ -1,0 +1,57 @@
+@media only screen and (max-width: 768px) {
+    .checkout {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 0%;
+    }
+    #payment {
+        max-width: 90%;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 600px;
+    }
+    #main {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #form {
+        width: 100%;
+        max-width: 100%;
+    }
+    #form1 {
+        max-width: 100%;
+    }
+    form {
+        max-width: 100%;
+        padding-left: 0;
+        width: 80%;
+    }
+    #mail_box {
+        max-width: 100%;
+        padding: 0%;
+    }
+    #email {
+        max-width: 100%;
+        width: 100%;
+    }
+    #form_3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #post_code {
+        width: 80%;
+        margin-left: 0;
+    }
+    label {
+        margin: 3% 0% 3% 0%;
+    }
+    body {
+        width: 100%;
+    }
+}
